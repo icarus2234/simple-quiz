@@ -80,13 +80,13 @@
     height: 24px;
     color: #CED7E5;
     accent-color: #3b82f6; 
-    border: 2px solid #CED7E5; /* Change the border width and color */
-    border-radius: 50%; /* Ensure the radio button is circular */
+    border: 2px solid #CED7E5; 
+    border-radius: 50%;
    
 }
 
 .radio:checked {
-    border-color: #2563eb; /* Change border color when checked */
+    border-color: #2563eb; 
 }
 
 .radio:checked::after {
@@ -98,9 +98,7 @@
     width: 14px;
     height: 14px;
     background-color: #0070f3;
-    /* Example color */
     border-radius: 50%;
-    /* Make it circular */
 }
 
 .label {

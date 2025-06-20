@@ -23,6 +23,6 @@ export default function QuizPage({ params }: QuizPageProps) {
   }
 
   const PageComponent = pageMapper[pageId as PageMapperKeys] || notFound;
-  console.log('PageComponent:', pageConfig);
+
   return <PageComponent pageConfig={pageConfig} />;
 }
