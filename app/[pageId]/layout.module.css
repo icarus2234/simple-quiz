@@ -1,0 +1,11 @@
+.layoutContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 24px;
+  position: relative;
+  overflow: auto;
+  height: calc(100dvh - 40px); 
+}
+
+

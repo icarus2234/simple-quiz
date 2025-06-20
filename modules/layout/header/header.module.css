@@ -1,0 +1,23 @@
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    
+}
+
+.headerContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 16px;
+    width: 390px;
+    max-width: var(--max-mobile-width);
+ 
+}
+
+.logo {
+    max-width: 100%;
+    height: auto;
+}
+

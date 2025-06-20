@@ -1,0 +1,90 @@
+.chartContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    
+
+}
+
+.startBox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 55px;
+    height: 36px;
+    border-radius: 8px;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 600;
+    font-family: var(--font-inter);
+    color: #000;
+    border: 1px solid var(--border-color);
+    align-self: flex-start;
+    margin-top: 8px;
+    padding: 8px;
+    box-shadow:
+            0px 2px 4px rgba(0, 0, 0, 0.08);
+    opacity: 0; 
+    animation: revealAnimation 1s ease forwards; 
+    animation-delay: 1s; 
+}
+
+.endBox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 69px;
+    height: 57px;
+    border-radius: 8px;
+    background: linear-gradient(135deg, #FF4D78, #FF9600);
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 600;
+    font-family: var(--font-inter);
+    color: var(--white);
+    align-self: flex-end;
+    margin-bottom: 8px;
+    padding: 8px;
+    opacity: 0;
+    animation: revealAnimation 1s ease forwards; 
+
+    animation-delay: 1s; 
+}
+
+.revealWrapper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.revealImage {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    object-fit: cover;
+
+    animation: revealFromLeft 2s ease forwards;
+    clip-path: inset(0 100% 0 0);
+    
+}
+
+@keyframes revealFromLeft {
+    to {
+        clip-path: inset(0 0% 0 0);
+        
+    } }
+
+@keyframes revealAnimation {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

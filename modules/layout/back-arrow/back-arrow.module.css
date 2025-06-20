@@ -1,0 +1,15 @@
+.backButton {
+    display: flex;
+    align-items: center;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.backButton:hover {
+    background-color: var(--grey);
+}
+
+.backButton:active {
+    background-color: var(--border-color);
+}

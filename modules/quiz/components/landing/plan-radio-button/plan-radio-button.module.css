@@ -1,0 +1,154 @@
+.options {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.option {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #F1F5FB;
+    height: 88px;
+    border-radius: 12px;
+    padding: 16px 0;
+    cursor: pointer;
+    border: 2px solid transparent;
+}
+
+.selectedOption {
+    border: 2px solid var(--brand-primary);
+}
+
+.withPopular {
+    border-top: none;
+    height: calc(88px + 28px);
+}
+
+.planBox {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 16px;
+    align-self: center;
+}
+
+
+.popular {
+    position: relative;
+    padding: 4px 12px;
+    top: -16px;
+    margin-left: -16px;
+    margin-right: -16px;
+    width: calc(100% + 4px);
+    background-color: var(--text-main);
+    color: white;
+
+    font-size: 12px;
+    line-height: 16px;
+    font-family: var(--font-plus-jakarta);
+    font-weight: 700;
+
+    text-align: center;
+    text-transform: uppercase;
+
+
+    border: 2px solid var(--text-main);
+    border-radius: 12px 12px 0 0;
+}
+
+.selectedPopular {
+    border: 2px solid var(--brand-primary);
+    background-color: var(--brand-primary);
+}
+
+.left {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.radio {
+    position: relative;
+    appearance: none; 
+    outline: none;
+    background-color: transparent;
+    cursor: pointer;
+    width: 24px;
+    height: 24px;
+    color: #CED7E5;
+    accent-color: #3b82f6; 
+    border: 2px solid #CED7E5; /* Change the border width and color */
+    border-radius: 50%; /* Ensure the radio button is circular */
+   
+}
+
+.radio:checked {
+    border-color: #2563eb; /* Change border color when checked */
+}
+
+.radio:checked::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 14px;
+    height: 14px;
+    background-color: #0070f3;
+    /* Example color */
+    border-radius: 50%;
+    /* Make it circular */
+}
+
+.label {
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 700;
+    font-family: var(--font-plus-jakarta);
+}
+
+.priceBox {
+    display: flex;
+    justify-content: center;
+    width: 93px;
+    height: 56px;
+    padding: 8px;
+    background-color: #E1E9F4;
+}
+
+.currency {
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 700;
+    font-family: var(--font-plus-jakarta);
+    color: var(--text-main);
+    margin-right: 4px;
+}
+
+.price {
+    font-size: 48px;
+    line-height: 40px;
+    font-weight: 800;
+    font-family: var(--font-plus-jakarta);
+    color: var(--text-main)
+}
+
+.button {
+    margin-top: 24px;
+    width: 100%;
+    padding: 12px;
+    background-color: #3b82f6;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.button:hover {
+    background-color: #2563eb;
+}

@@ -1,0 +1,11 @@
+.mainText {
+    font-size: 10px !important;
+    line-height: 16px !important;
+    color: #778191 !important;
+    font-family: var(--font-plus-jakarta);
+}
+
+.link {
+    color: var(--text-main) !important;
+    font-family: var(--font-plus-jakarta);
+}

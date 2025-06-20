@@ -1,0 +1,64 @@
+:root {
+    --black: #000000;
+    --white: #ffffff;
+    --brand-primary: #0062F5;
+    --brand-primary-dark: #004BB2;
+    --purple: #6939A2;
+    --grey: #EAEEF7;
+    --error: #FF0000;
+    --border-color: #E4E7EB;
+    --border-color2:#DFE5EF;
+    --text-main: #222B38;
+    --text-secondary: #A7A7A7;
+    --font-size: 16px;
+    --line-height: 24px;
+    --font-lora: 'Lora', serif;
+    --font-plus-jakarta: 'Plus Jakarta Sans', sans-serif; 
+    --font-inter: 'Inter', sans-serif;
+    --max-mobile-width: 390px;
+}
+
+
+body {
+    font-family: var(--font-lora);
+    font-size: var(--font-size);
+    line-height: var(--line-height);
+    font-weight: 500;
+}
+
+.bold {
+    font-weight: 600 !important;
+}
+
+.mb-12 {
+    margin-bottom: 12px;
+}
+
+.mb-16 {
+    margin-bottom: 16px;
+}
+
+.mb-32 {
+    margin-bottom: 32px;
+}
+
+.mb-48 {
+    margin-bottom: 48px;
+}
+
+.textAlignLeft {
+    text-align: left !important;
+}
+
+.textSecondary {
+    color: var(--text-secondary) !important;
+}
+
+
+.plusJakartaSans {
+    font-family: var(--font-plus-jakarta) !important;
+}
+
+.inter {
+    font-family: var(--font-inter) !important;
+}

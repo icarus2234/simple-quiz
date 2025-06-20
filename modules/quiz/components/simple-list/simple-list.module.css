@@ -1,0 +1,13 @@
+.simpleListContainer {
+    width: 100%;
+    border: 1px solid var(--border-color2);
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.simpleListItem {
+    padding: 12px;
+    border-bottom: 1px solid var(--border-color2);
+}
